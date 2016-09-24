@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_1"
+            android:icon="@drawable/fit"
+            android:title="@string/workout" />
+
+        <item
+            android:id="@+id/menu_2"
+            android:icon="@drawable/kcal"
+            android:title="@string/food_dairy" />
+    </group>
+
+    <item android:title="@string/calculate">
+        <menu>
+            <item
+                android:id="@+id/menu_3"
+                android:icon="@drawable/bmi"
+                android:title="@string/bmi" />
+        </menu>
+    </item>
+</menu>

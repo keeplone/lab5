@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.keeplone.lab4_2.FoodFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/tab_bg"
+        app:stl_defaultTabTextColor="@color/tab"
+        app:stl_distributeEvenly="true"
+        app:stl_indicatorColor="@color/tab_select"
+        app:stl_indicatorCornerRadius="1.5dp"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="@dimen/indicator_tab">
+
+    </com.ogaclejapan.smarttablayout.SmartTabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:id="@+id/pager">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
